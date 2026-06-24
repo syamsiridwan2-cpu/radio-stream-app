@@ -1,0 +1,104 @@
+/* ============================================================
+   RESPONSIVE — Breakpoints for Tablet & Mobile
+   ============================================================ */
+
+@media (max-width: 768px) {
+  .app {
+    padding: 10px 12px 76px;
+  }
+
+  .grid {
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  }
+
+  .volume-wrap input[type="range"] {
+    width: 56px;
+  }
+
+  .player-divider {
+    display: none;
+  }
+
+  .filter-row {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  .app {
+    padding: 8px 10px 68px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .card {
+    padding: 12px;
+  }
+
+  .player {
+    padding: 6px 8px;
+  }
+
+  .player-row {
+    gap: 5px;
+  }
+
+  .player-thumb {
+    width: 32px;
+    height: 32px;
+    font-size: 16px;
+  }
+
+  .player-title {
+    font-size: 12px;
+  }
+
+  .player-sub {
+    font-size: 10px;
+  }
+
+  .ctrl-btn {
+    width: 30px;
+    height: 30px;
+    font-size: 12px;
+  }
+
+  .ctrl-btn--play {
+    width: 34px;
+    height: 34px;
+    font-size: 15px;
+  }
+
+  .volume-wrap input[type="range"] {
+    width: 40px;
+  }
+
+  .volume-wrap {
+    gap: 2px;
+  }
+
+  .player-divider {
+    display: none;
+  }
+
+  .tabs {
+    gap: 3px;
+  }
+
+  .tab {
+    padding: 8px;
+    font-size: 12px;
+  }
+
+  .logo {
+    font-size: 18px;
+  }
+
+  .search-bar input {
+    font-size: 14px;
+    padding: 10px 0;
+  }
+}

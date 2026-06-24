@@ -1,0 +1,37 @@
+/* ============================================================
+   BASE — Reset, Variables & Global Styles
+   ============================================================ */
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg: #0d0d1a;
+  --surface: #16162b;
+  --surface2: #1e1e3a;
+  --surface3: #2a2a4a;
+  --text: #eeeef6;
+  --text2: #9898b8;
+  --text3: #6c6c8a;
+  --accent: #7c6aff;
+  --accent2: #4ade80;
+  --accent-dim: rgba(124, 106, 255, 0.12);
+  --border: #282845;
+  --radius: 14px;
+  --radius-sm: 10px;
+  --radius-xs: 6px;
+  --shadow: 0 8px 32px rgba(0,0,0,0.5);
+  --transition: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    'Helvetica Neue', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+}

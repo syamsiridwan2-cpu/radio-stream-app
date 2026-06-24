@@ -1,0 +1,14 @@
+[Unit]
+Description=Radio Stream App
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/python3 /home/pi/radio-stream-app/server.py --port 8000
+Restart=on-failure
+RestartSec=5
+User=pi
+WorkingDirectory=/home/pi/radio-stream-app
+
+[Install]
+WantedBy=multi-user.target
